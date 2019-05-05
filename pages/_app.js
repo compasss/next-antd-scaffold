@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
 import withReduxSaga from 'next-redux-saga';
 import createStore from '../redux/store';
-import Layout from '../components/Layout';
+import Layout from '../components/Layout/index';
 import { RouterTitle } from '../constants/ConstTypes';
 // fix dev env antd table bugs
 getConfig().publicRuntimeConfig.isDev
@@ -32,7 +32,7 @@ class InTerViewSystem extends App {
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <meta charSet='utf-8' />
-          <title>Next-Antd-Scafflod</title>
+          <title>insurance-mgmt</title>
           <link rel='shortcut icon' href='/static/favicon.ico' type='image/ico'/>
           <style jsx global>{`
             * {
